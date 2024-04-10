@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hõng Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Hõng Coffee</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At Hõng Coffee, we believe in the power of taste and aroma to bring people together. Our dissolvable coffee is crafted from the finest beans, carefully selected and roasted to perfection to ensure you enjoy every sip. Discover why our coffee is the best choice for your mornings and breaks.</p>
+            </div>
+        </section>
+
+        <section id="order" class="section order-section">
+            <div class="container">
+                <h2>Order Your Flavor</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Classic Blend</h3>
+                        <p>A timeless favorite, perfect for every coffee lover.</p>
+                        <button onclick="orderNow(this)">Order Now</button>
+                        <div class="message"></div>
+                    </div>
+                    <div class="card">
+                        <h3>Vanilla Dream</h3>
+                        <p>Smooth vanilla flavor blended with rich coffee for a sweet escape.</p>
+                        <button onclick="orderNow(this)">Order Now</button>
+                        <div class="message"></div>
+                    </div>
+                    <div class="card">
+                        <h3>Dark Roast</h3>
+                        <p>Bold and rich, designed for those who love a strong coffee kick.</p>
+                        <button onclick="orderNow(this)">Order Now</button>
+                        <div class="message"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <img src="images/photo1.png" alt="Coffee Photo 1">
+                    <img src="images/photo2.png" alt="Coffee Photo 2">
+                    <img src="images/photo3.png" alt="Coffee Photo 3">
+                </div>
+                <p>Discover more about our coffee journey on Instagram.</p>
+                <a href="https://www.instagram.com/hongcoffee/" target="_blank">
+                    <img src="images/instagram.png" alt="Follow us on Instagram" class="social-icon">
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Connect With Us</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Hõng Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
